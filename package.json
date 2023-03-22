@@ -14,6 +14,7 @@
     "@astrojs/mdx": "^0.11.6",
     "@astrojs/rss": "^1.0.3",
     "@astrojs/sitemap": "^1.0.0",
+    "@fontsource/anton": "^4.5.9",
     "astro": "^1.6.10",
     "sass": "^1.59.3",
     "stylelint": "^15.3.0",
