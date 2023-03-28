@@ -93,8 +93,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-	width: 8rem;
-	height: 8rem;
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem 1rem 1rem 0;
+  align-items: center;
+  justify-items: center;
+
 
     &:hover span {
       animation: evolve 3s infinite;
@@ -104,12 +108,11 @@ footer {
     //@at-root body:hover & span {
     //  animation: evolve 3s infinite;
     //}
-  span {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiNGRjk5MDAiLz4KPC9zdmc+Cg==);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
 
+  span {
+    /* Kudos to Gary Mazzeo ( https://github.com/garymazzeo/ ) for improvements to my original code */
+    background: #FF9900;
+    border-radius: 50%;
     width: 2rem;
     height: 2rem;
     opacity: var(--frame-1);
