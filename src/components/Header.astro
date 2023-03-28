@@ -1,25 +1,28 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
+import "@fontsource/lilita-one";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+	<span class="glider">
+		<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+	</span>
+	<div class="title">
+		<h1>
+			EHLO<em>Vader</em>
+		</h1>
+		<nav>
+			<ul>
+				<li><a class={currentPath === "about" ? "active": ""} href="/about">About</a></li>
+				<li><a class={currentPath === "resume" ? "active": ""} href="/resume">Resumé</a></li>
+				<li><a class={currentPath === "projects" ? "active": ""} href="/projects">Projects</a></li>
+				<li><a class={currentPath === "garden" ? "active": ""} href="/garden">Garden</a></li>
+				<li><a class={currentPath === "uses" ? "active": ""} href="/uses">Uses</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
