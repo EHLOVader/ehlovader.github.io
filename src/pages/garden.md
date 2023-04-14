@@ -4,7 +4,7 @@ title: "Digital Garden"
 description: "Welcome to my digital garden where I share things I make and learn."
 ---
 
-Here you will find some things that I've cerated that don't quite fit into projects, and aren't created frequently enough 
+Here you will find some things that I've created that don't quite fit into projects, and aren't created frequently enough 
 for me to call it a blog. Some guides, information, and other things that I've learned and want to share.
 
 ## Talks
