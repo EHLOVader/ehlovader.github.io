@@ -38,6 +38,66 @@ a {
   }
 }
 
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: #0b0522;
+  border: 2px solid #FF9900;
+  margin: 1rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  &:hover,
+  &:focus {
+      outline: none;
+      font-weight: normal;
+      border-bottom: unset;
+  }
+  /* reset button styles*/
+    cursor: pointer;
+
+
+  &.btn-primary {
+    background: #FF9900;
+    border: 2px solid #FF9900;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+
+    &:hover,
+    &:focus {
+      background: #f2f2f2;
+      outline: none;
+    }
+
+  }
+
+  &.btn-secondary {
+    background: #f2f2f2;
+    border: 2px solid #FF9900;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+
+    &:hover,
+    &:focus {
+      background: #FF9900;
+      outline: none;
+    }
+  }
+
+
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
