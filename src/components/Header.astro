@@ -8,20 +8,23 @@ const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <header>
-	<span class="glider">
-		<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-	</span>
+	<a href="/">
+		<span class="glider">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</span>
+	</a>
 	<div class="title">
-		<h1>
-			EHLO<em>Vader</em>
-		</h1>
+		{(currentPath === '')? <h1 class="site-title">EHLOVader</h1>:
+			<span class="site-title"><a href="/">EHLOVader</a></span>
+		}
+
 		<nav>
 			<ul>
-				<li><a class={currentPath === "about" ? "active": ""} href="/about">About</a></li>
-				<li><a class={currentPath === "resume" ? "active": ""} href="/resume">Resumé</a></li>
-				<li><a class={currentPath === "projects" ? "active": ""} href="/projects">Projects</a></li>
-				<li><a class={currentPath === "garden" ? "active": ""} href="/garden">Garden</a></li>
-				<li><a class={currentPath === "uses" ? "active": ""} href="/uses">Uses</a></li>
+				<li><HeaderLink href="/about">About</HeaderLink></li>
+				<li><HeaderLink href="/resume">Resumé</HeaderLink></li>
+				<li><HeaderLink href="/projects">Projects</HeaderLink></li>
+				<li><HeaderLink href="/garden">Garden</HeaderLink></li>
+				<li><HeaderLink href="/uses">Uses</HeaderLink></li>
 			</ul>
 		</nav>
 	</div>
