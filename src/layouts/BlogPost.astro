@@ -2,6 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import "@fontsource/lilita-one";
+import "@fontsource/maitree"
+
 
 export interface Props {
 	content: {
@@ -16,6 +19,20 @@ export interface Props {
 const {
 	content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
+
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+
+//create safe class name from current path
+let classes = currentPath
+	.split('/')
+	.map((path) => path.replace(/[^a-zA-Z0-9]/g, ''))
+	.join('-');
+
+if(classes === '') {
+	classes = 'home';
+}
 ---
 
 <html lang="en">
@@ -33,7 +50,7 @@ const {
 		</style>
 	</head>
 
-	<body>
+	<body class={classes}>
 		<Header />
 		<main>
 			<article>
