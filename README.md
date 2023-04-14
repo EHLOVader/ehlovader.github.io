@@ -1,3 +1,8 @@
+# EHLOvader Personal Site
+
+This is the repo for my personal site at https://ehlovader.com. It is built with [Astro](https://astro.build) and served using GitHub Pages.
+
+
 # Astro Starter Kit: Blog
 
 ```
