@@ -1,4 +1,5 @@
 ---
+import Layout from '../layouts/Default.astro';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -8,19 +9,4 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 const year = new Date().getFullYear().toString().slice(-2);
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-	<BaseHead title="EHLOVader" />
-</head>
-<body>
-<Header />
-<main>
-
-
-</main>
-<footer>
-	<p>Copyright &copy; 20{ year }</p>
-</footer>
-</body>
-</html>
+<Layout title="EHLOVader" />
