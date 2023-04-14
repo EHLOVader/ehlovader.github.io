@@ -14,11 +14,21 @@ body {
   max-width: 40rem;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
 a {
   color: inherit;
   font-size: 1em;
   color: #FF9900;
-  text-underline-offset: 3px;
+  text-underline-offset: 6.5px;
 
   &:hover,
   &:focus {
