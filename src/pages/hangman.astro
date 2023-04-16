@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Default.astro';
+
+
+---
+
+<Layout title="Hangman">
+    This is the hangman game i made in qBasic. I had taught myself qbasic from the help doc I found in the system dir on my
+    family PC. This was a bit more advanced than the other things I'd created so far. It involved writing Bitmaps directly to
+    the display COM port. I had adjusted the display colors to black out the screen and write the bitmap so I could take a
+    saved screen value because the bitmap was incredibly slow to write out. This allowed me to animate the hangman and provide
+    multiple images quickly by saving them in memory.
+
+
+
+    <style type="text/css" global>
+        #dosbox { margin-top: 3rem;}
+        .dosbox-container  { width: 640px; height: 400px; }
+    </style>
+
+    <div id="dosbox"></div>
+    <br/>
+    <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+
+    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <script type="text/javascript">
+      var dosbox = new Dosbox({
+        id: "dosbox",
+        onload: function (dosbox) {
+          dosbox.run("resources/hangman/hangman.zip", "./source/HANGMAN.EXE");
+        },
+        onrun: function (dosbox, app) {
+          console.log("App '" + app + "' is runned");
+        }
+      });
+    </script>
+</Layout>
