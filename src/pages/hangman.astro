@@ -27,7 +27,7 @@ import Layout from '../layouts/Default.astro';
       var dosbox = new Dosbox({
         id: "dosbox",
         onload: function (dosbox) {
-          dosbox.run("resources/hangman/hangman.zip", "./source/HANGMAN.EXE");
+          dosbox.run("/resources/hangman/hangman.zip", "./source/HANGMAN.EXE");
         },
         onrun: function (dosbox, app) {
           console.log("App '" + app + "' is runned");
