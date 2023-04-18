@@ -5,13 +5,7 @@ import Layout from '../layouts/Default.astro';
 ---
 
 <Layout title="Hangman">
-    This is the hangman game i made in qBasic. I had taught myself qbasic from the help doc I found in the system dir on my
-    family PC. This was a bit more advanced than the other things I'd created so far. It involved writing Bitmaps directly to
-    the display COM port. I had adjusted the display colors to black out the screen and write the bitmap so I could take a
-    saved screen value because the bitmap was incredibly slow to write out. This allowed me to animate the hangman and provide
-    multiple images quickly by saving them in memory.
-
-
+    <h1>Somewhat Classic Hangman</h1>
 
     <style type="text/css" global>
         #dosbox { margin-top: 3rem;}
@@ -20,7 +14,7 @@ import Layout from '../layouts/Default.astro';
 
     <div id="dosbox"></div>
     <br/>
-    <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+    <button onclick="dosbox.requestFullScreen();" class="btn btn-primary">Make fullscreen</button>
 
     <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
     <script type="text/javascript">
@@ -34,4 +28,84 @@ import Layout from '../layouts/Default.astro';
         }
       });
     </script>
+
+    <h2>Behind the game</h2>
+
+    <p>
+    I created this hangman game in qBasic back in high school, teaching myself the language by reading the help doc
+    I found on my family's PC. While I had created other projects before, this game was a bit more advanced, and
+    presented several challenges that I had to overcome.
+    </p><p>
+    One major challenge was the limitations of the qBasic system for graphics. To include drawings that I had created in
+    msPaint and Photoshop, I had to save bitmaps and load them into the display directly using the display COM port.
+    However, this process was incredibly slow, as the image would load line by line across the screen.
+</p><p>
+    To speed up the image loading process, I came up with a creative solution. I would update the entire screen palette
+    to black, write the bitmap to the screen, and then restore the palette to show the image. But even with this technique,
+    it still took a long time to load the image.
+</p><p>
+    To solve this problem and achieve animation, I started writing under the veil of darkness, like I mentioned above.
+    After writing out the entire image, I would save it (or portions of it) into memory, and recall it later on in the
+    game. This allowed me to treat the bitmaps like sprites and quickly respond to incorrect guesses by removing limbs
+    from the hangman.
+</p><p>
+    I also added a new dynamic to the game by animating the hangman. When you lose, you are given a few seconds to quickly
+    guess the word before the hangman runs out of breath, adding a sense of urgency and excitement to the gameplay.
+    And if you win, the hangman dances and celebrates your victory.
+</p><p>
+    Through this project, I developed valuable skills in animation, graphics, and problem-solving. While I no longer use
+    qBasic, the skills and techniques I learned creating this game are transferable to other programming languages and projects.
+</p><p>
+    I am passionate about programming and enjoy solving challenging problems. I believe that my experience with this
+    hangman game demonstrates my ability to overcome obstacles and create engaging, interactive software.
+</p>
+    <h2>How to play</h2>
+<p>
+    First off you need to know how many
+    are playing you have a choice of up to 2
+    players, in 1 player mode the challenge
+    is chosen randomly from a database, and
+    in 2 player mode the challenge is made
+    by your challenger, he chooses the
+    category and the challenge, there are no
+    limits to what that category can be but
+    the size of it, must be no more than 20
+    characters.
+</p>
+    <h2>Game Rules:</h2>
+
+<p>
+    While guessing the challenge you get
+    4 chances to miss then you have so many
+    seconds to finish, the time allotted is
+    determined by how much of the puzzle has
+    been solved. You have to solve it before
+    your man strangles.
+</p>
+    <h3>2 Player Specifics:</h3>
+    <p>
+    In two player mode there are a few
+    differences that you may like to know.
+    in this mode since you choose your own
+    puzzles for each other, you can add them
+    to the database to make 1 player games
+    more interesting. Also the scoring is
+    different. In two player mode you get 1
+    point for every one you get right, and
+    your opponent gets one for everyone you
+    get wrong. The two players alternate
+    turns until you wish to quit.
+</p>
+    <h3>1 Player Specifics:</h3>
+<p>
+    In the one player mode you are fed
+    one puzzle after another out of the data
+    base. To add to the game play I made it
+    randomly choose which puzzle to show,
+    and now there will be no repeats. Thanks
+    beta testing! :) the principle is the
+    same you just have a different scoring
+    system, none. :P
+</p>
+
 </Layout>
