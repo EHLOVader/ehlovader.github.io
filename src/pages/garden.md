@@ -22,6 +22,10 @@ These are two security advisories I disclosed for LemonStand ( [sadly no longer 
 * [Null Byte Poisoning within LemonStand ecommerce platform](https://gist.github.com/EHLOVader/343103dcb454d41bbe18)
 * [Session injection/hijacking LemonStand ecommerce platform](https://gist.github.com/EHLOVader/7851a055454f1749e922)
  
+## Blog
+yeah I know I said this wasn't a blog, but I've written a few things that I think are worth sharing.
+### [Slow Food Movement for the Web](https://ehlovader.github.io/slow-food-movement-for-the-web/)
+
 ## Random
 
 ### [RFC specifications that people miss in email validation](https://gist.github.com/EHLOVader/4531693)
