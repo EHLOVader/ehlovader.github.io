@@ -24,7 +24,7 @@ These are two security advisories I disclosed for LemonStand ( [sadly no longer 
  
 ## Blog
 yeah I know I said this wasn't a blog, but I've written a few things that I think are worth sharing.
-### [Slow Food Movement for the Web](https://ehlovader.github.io/slow-food-movement-for-the-web/)
+### [Slow Food Movement for the Web](https://ehlovader.github.io/slow-food-movement-for-web/)
 
 ## Random
 
