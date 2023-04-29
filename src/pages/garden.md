@@ -11,7 +11,7 @@ for me to call it a blog. Some guides, information, and other things that I've l
 ### [Two Modern Tools To Improve Your Wordpress Development Workflow ](https://github.com/EHLOVader/wordcamp2019)
 #### Lightning talk at WordCamp Ann Arbor 2019
 I will share two tools that have changed how I work on WordPress sites. Roots.io’s Bedrock and Sage 9 starter theme are a quick way to jump into more modern workflow. Both are packed with many tools and technologies, we will look at a handful of my favorites and how they have changed my work for the better.
-[slides](https://ehlovader.github.io/wordcamp2019)
+[slides](/wordcamp2019)
 
 ## Guides
 ### MacOS developer setup (_coming soon_)
@@ -24,7 +24,7 @@ These are two security advisories I disclosed for LemonStand ( [sadly no longer 
  
 ## Blog
 yeah I know I said this wasn't a blog, but I've written a few things that I think are worth sharing.
-### [Slow Food Movement for the Web](https://ehlovader.github.io/slow-food-movement-for-web/)
+### [Slow Food Movement for the Web](/slow-food-movement-web/)
 
 ## Random
 
@@ -36,7 +36,7 @@ form letter of the RFC spec that are often missed.
 I loved https://ohshitgit.com/ and have been referring to it for awhile now. But since they aren't widely open to contributions
 I thought a fork of sorts would be nice to store the few new tips or issues I've run into and found a fix for. So here I've placed them in a gist. 
 
-### [Somewhat Classic Hangman](https://ehlovader.github.io/hangman/)
+### [Somewhat Classic Hangman](/hangman/)
 This is a hangman game I created in highschool. It is playable here with [js-dos](https://js-dos.com) 
 I made the images, character sprites, and built the interface with ascii characters. It was made in qBasic, a langauge I'd learned on my own from the manual I found in my home PC windows system folders. 
 I've also explained a bit of how it is made. 
