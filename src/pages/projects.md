@@ -16,9 +16,9 @@ Back when I was on IRC more frequently, another developer, [Chris White](https:/
 idea for a more intense shrug emoji for when you really don't know. He created it initially and I added some fun effects 
 like wrapping into block and automatically copying the shrug once you've set it.
 
-## [Is it daylight saving?](https://github.com/EHLOVader/isitdaylightsaving)
+## [Is it daylight saving?](https://isitdaylightsaving.com/)
 I've often caught myself wondering if were in the saving time or not. I created this site to check based on the user's 
-browser timezone if currently the time is saving or standard. 
+browser timezone if currently the time is saving or standard. [view source at GitHub](https://github.com/EHLOVader/isitdaylightsaving) 
 
 ## [2023 NYE countdown for  AdaFruit EyeLights LED Glasses](https://github.com/EHLOVader/eyelights_newyear_countdown)
 A fork from [willgorman](https://github.com/willgorman) I updated the countdown code to work for the current year and changed the colors. Did a bit of cleaning up too, including the libraries.
