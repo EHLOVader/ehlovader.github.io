@@ -33,6 +33,15 @@ h1, .h1 {
   line-height: 1em;
 }
 
+hgroup {
+  h2,
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  margin-bottom: 1em;
+}
+
 a {
   color: inherit;
   font-size: 1em;
@@ -327,4 +336,54 @@ footer {
     opacity: var(--frame-1);
     transform: scale(var(--frame-1));
   }
+}
+
+
+
+form {
+  display:flex;
+  flex-direction:column;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 2px solid #0b0522;
+  background: #f2f2f2;
+  color: #0b0522;
+  font-size: 1em;
+  font-family: inherit;
+  resize: none;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #FF9900;
+  }
+}
+
+input[type="submit"] {
+    background: #FF9900;
+    border: 2px solid #FF9900;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    color: #0b0522;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background: #f2f2f2;
+        outline: none;
+    }
 }
