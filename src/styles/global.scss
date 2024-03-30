@@ -1,6 +1,9 @@
+@import '_reset';
+
 html:has(body.home) {
   height: 100%;
 }
+
 body {
   font-family: "Maitree", serif;
   line-height: 1.5rem;
