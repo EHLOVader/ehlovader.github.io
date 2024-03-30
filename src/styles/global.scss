@@ -49,11 +49,12 @@ a {
   color: inherit;
   font-size: 1em;
   color: #FF9900;
-  text-underline-offset: 6.5px;
+  text-underline-offset: 7.5px;
 
   &:hover,
   &:focus {
     outline: none;
+    text-decoration: none;
     font-weight: bold;
     border-bottom: 2px solid #FF9900;
   }
