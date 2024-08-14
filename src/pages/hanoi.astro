@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Default.astro';
+
+
+---
+
+<Layout title="Towers of Hanoi">
+    <h1>Towers of Hanoi</h1>
+
+    <style type="text/css" global>
+        #dosbox { margin-top: 3rem;}
+        .dosbox-container  { width: 640px; height: 400px; }
+    </style>
+
+    <div id="dosbox"></div>
+    <br/>
+    <button onclick="dosbox.requestFullScreen();" class="btn btn-primary">Make fullscreen</button>
+
+    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <script type="text/javascript">
+        var dosbox = new Dosbox({
+            id: "dosbox",
+            onload: function (dosbox) {
+                dosbox.run("/resources/hanoi.zip", "./HANOI.EXE");
+            },
+            onrun: function (dosbox, app) {
+                console.log("App '" + app + "' is runned");
+            },
+            backend: "dosboxX"
+        });
+    </script>
+</Layout>
