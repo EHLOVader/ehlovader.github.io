@@ -7,30 +7,18 @@ import Layout from '../layouts/Default.astro';
 <Layout title="Hangman">
     <h1>Somewhat Classic Hangman</h1>
 
-    <strong>
-        WARNING: Garbled noise happens at the start, not sure why but this is a 20 year old program made for a 486 PC. I'm sorry. RIP headphone wearers.
-    </strong>
-
-    <style type="text/css" global>
-        #dosbox { margin-top: 3rem;}
-        .dosbox-container  { width: 640px; height: 400px; }
-    </style>
-
     <div id="dosbox"></div>
     <br/>
-    <button onclick="dosbox.requestFullScreen();" class="btn btn-primary">Make fullscreen</button>
-
-    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <!-- js-dos style sheet -->
+    <script type="text/javascript" src="https://v8.js-dos.com/latest/js-dos.js"></script>
     <script type="text/javascript">
-      var dosbox = new Dosbox({
-        id: "dosbox",
-        onload: function (dosbox) {
-          dosbox.run("/resources/hangman/hangman.zip", "./source/HANGMAN.EXE");
-        },
-        onrun: function (dosbox, app) {
-          console.log("App '" + app + "' is runned");
-        }
-      });
+        Dos(document.getElementById("dosbox"),
+            {
+                url: "/resources/hangman.jsdos",
+                kiosk: true,
+                noCloud: true,
+                noNetworking: true
+            });
     </script>
 
     <h2>How to play</h2>
@@ -84,11 +72,11 @@ import Layout from '../layouts/Default.astro';
 
     <h2>Behind the game</h2>
 
-    <p>
+<p>
     I created this hangman game in qBasic back in high school, teaching myself the language by reading the help doc
     I found on my family's PC. While I had created other projects before, this game was a bit more advanced, and
     presented several challenges that I had to overcome.
-    </p><p>
+</p><p>
     One major challenge was the limitations of the qBasic system for graphics. To include drawings that I had created in
     msPaint and Photoshop, I had to save bitmaps and load them into the display directly using the display COM port.
     However, this process was incredibly slow, as the image would load line by line across the screen.
@@ -109,5 +97,23 @@ import Layout from '../layouts/Default.astro';
     Through this project, I developed valuable skills in animation, graphics, and problem-solving. While I no longer use
     qBasic, the skills and techniques I learned creating this game have helped me in what I do today.
 </p>
-
 </Layout>
+
+<style is:global>
+    .pre-run-window div:not(.cursor-pointer) {
+        display: none;
+    }
+    #login {
+        display: none;
+    }
+
+    @media( min-width: 800px ){
+        #dosbox {
+            margin-left: -6em;
+            margin-right: -6em;
+        }
+    }
+
+    #dosbox { margin-top: 3rem;}
+    .dosbox-container  { width: 640px; height: 400px; }
+</style>
