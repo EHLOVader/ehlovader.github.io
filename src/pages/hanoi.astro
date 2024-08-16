@@ -7,11 +7,6 @@ import Layout from '../layouts/Default.astro';
 <Layout title="Towers of Hanoi">
     <h1>Towers of Hanoi</h1>
 
-    <style type="text/css" global>
-        #dosbox { margin-top: 3rem;}
-        .dosbox-container  { width: 640px; height: 400px; }
-    </style>
-
     <div id="dosbox"></div>
     <br/>
     <!-- js-dos style sheet -->
@@ -34,4 +29,14 @@ import Layout from '../layouts/Default.astro';
     #login {
         display: none;
     }
+
+    @media( min-width: 800px ){
+        #dosbox {
+            margin-left: -6em;
+            margin-right: -6em;
+        }
+    }
+
+    #dosbox { margin-top: 3rem;}
+    .dosbox-container  { width: 640px; height: 400px; }
 </style>
