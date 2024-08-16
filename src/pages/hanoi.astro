@@ -14,19 +14,24 @@ import Layout from '../layouts/Default.astro';
 
     <div id="dosbox"></div>
     <br/>
-    <button onclick="dosbox.requestFullScreen();" class="btn btn-primary">Make fullscreen</button>
-
-    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <!-- js-dos style sheet -->
+    <script type="text/javascript" src="https://v8.js-dos.com/latest/js-dos.js"></script>
     <script type="text/javascript">
-        var dosbox = new Dosbox({
-            id: "dosbox",
-            onload: function (dosbox) {
-                dosbox.run("/resources/hanoi.zip", "./HANOI.EXE");
-            },
-            onrun: function (dosbox, app) {
-                console.log("App '" + app + "' is runned");
-            },
-            backend: "dosboxX"
+        Dos(document.getElementById("dosbox"),
+        {
+            url: "/resources/hanoi.jsdos",
+            kiosk: true,
+            noCloud: true,
+            noNetworking: true
         });
     </script>
 </Layout>
+
+<style is:global>
+    .pre-run-window div:not(.cursor-pointer) {
+        display: none;
+    }
+    #login {
+        display: none;
+    }
+</style>
