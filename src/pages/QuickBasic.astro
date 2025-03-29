@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Default.astro';
+
+
+---
+
+<Layout title="QuickBasic">
+    <h1>Early QuickBasic Games</h1>
+
+    <p>I found a copy of some of my early programming on an old drive &mdash; the source code I thought had been lost.
+        I learned qBasic after finding the dev tool in my Windows system folder. I found a help file that got me started with the basics.
+        I began with demos and then moved on to some simple games.
+    </p>
+
+    <p>
+    I wanted more from the language and found out that you can connect to the display output directly
+    for things like drawing and you can even communicate with the mouse to take input to provide
+    point and click events.
+    </p>
+    <section>
+    <img src="/images/biker.png" alt="Biker Game" class="w-1/2" />
+    <p>
+        I started with the biker game. It was a simple Tron clone where you had to avoid the walls and
+        the other player. It was set up with two players on the keyboard and when a player crashed I
+        animated an explosion.
+    </p>
+    <br>
+    <a href="/biker" class="btn btn-primary">Play Biker</a>
+    </section>
+    <section>
+    <img src="/images/hanoi.png" alt="Biker Game" class="w-1/2" />
+    <p>
+        Then I think I created the Towers of Hanoi as a class project. I was taking a computer programming
+        class in High School and they were also teaching in QBasic. It was a simple disk game initially. But I
+        had been playing with drawing using the shape and line commands available in QBasic. I wanted to create
+        a 3D-ish version that animated the disks moving up and down. I don't have a working copy of this version
+        but do have a demo of what it was going to look like, where I was testing and perfecting the effect.
+    </p>
+    <br>
+        <a href="/hanoi" class="btn btn-primary">Play Towers of Hanoi</a>
+    </section>
+    <section>
+        <img src="/images/hangman.png" alt="Biker Game" class="w-1/2" />
+        <p>
+            Finally I created a Hangman game. This was stretching the language to its limits. I wanted to have
+            some animation and instead of just using line drawings with built in commands I planned on using BMP
+            sprite files that I created in Windows Paint. I looked up how to read in the BMP and drew it on the screen
+            Later capturing what colors the pixels in their respective places were to store in memory. It also included
+            some file based database storage for the phrases and categories
+        </p>
+        <br>
+        <a href="/hangman" class="btn btn-primary">Play Hangman</a>
+
+    </section>
+</Layout>
