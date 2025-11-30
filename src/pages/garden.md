@@ -36,7 +36,8 @@ form letter of the RFC spec that are often missed.
 I loved https://ohshitgit.com/ and have been referring to it for awhile now. But since they aren't widely open to contributions
 I thought a fork of sorts would be nice to store the few new tips or issues I've run into and found a fix for. So here I've placed them in a gist. 
 
-### [Somewhat Classic Hangman](/hangman/)
-This is a hangman game I created in highschool. It is playable here with [js-dos](https://js-dos.com) 
-I made the images, character sprites, and built the interface with ascii characters. It was made in qBasic, a langauge I'd learned on my own from the manual I found in my home PC windows system folders. 
-I've also explained a bit of how it is made. 
+### [QuckBasic games](/quickbasic/)
+#### [Somewhat Classic Hangman](/quickbasic/#hangman)
+#### [Towers of Hanoi](/quickbasic/#hanoi)
+#### [Biker game](/quickbasic/#biker)
+
