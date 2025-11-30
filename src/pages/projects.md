@@ -61,6 +61,10 @@ of extensions. I added features for more icons from FontAwesome when it was remo
 to maintain my own fork anyway. Since manifest v2 was deprecated, I need to upgrade, so it doesn't work. But that work
 has already been done by others, so I'll be merging those changes in soon. See other fork from [coing-lab](https://github.com/coing-lab/chrome-context)
 
+## [CSS Specificity](https://ehlovader.com/css-specificity/)
+A fork of [CSS Specificity](https://github.com/teleject/css-specificity) it has since [gone offline](http://cssspecificity.com/) and I occasionally like to reference it, the fun explaination of 
+specificity in context of The Shining movie is memorable, so I forked it to keep a copy for myself.
+
 ## [MeetingBrew](https://meetingbrew-ehlovader.vercel.app/)
 A fork of [MeetingBrew](https://meetingbrew.com/) to add support for different hour windows on each day of the selected
 range.
